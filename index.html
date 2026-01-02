@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 上海蘇州親子五日遊 (歡樂版)</title>
+    <meta name="description" content="2026年4月上海蘇州親子行程表，迪士尼歡樂風格版">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入圓潤字體 -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Noto+Sans+TC:wght@400;700&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', '"Fredoka"', 'sans-serif'],
+                        display: ['"Varela Round"', '"Fredoka"', 'sans-serif'],
+                    },
+                    colors: {
+                        magic: {
+                            red: '#FF5F5F',      // 米奇紅
+                            yellow: '#FFD700',   // 鞋子黃
+                            black: '#222222',    // 耳朵黑
+                            blue: '#4FB6FF',     // 城堡藍
+                            purple: '#A960EE',   // 夢幻紫
+                            pink: '#FF99C8',     // 公主粉
+                            bg: '#F0F8FF',       // 愛麗絲淡藍
+                        },
+                    },
+                    backgroundImage: {
+                        'polka-dots': "radial-gradient(#E1F2FE 20%, transparent 20%), radial-gradient(#E1F2FE 20%, transparent 20%)",
+                    },
+                    boxShadow: {
+                        'pop': '4px 4px 0px 0px rgba(0,0,0,0.1)',
+                        'pop-hover': '6px 6px 0px 0px rgba(0,0,0,0.15)',
+                    },
+                    animation: {
+                        'spin-slow': 'spin 3s linear infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #F0F8FF;
+            background-image: radial-gradient(#dbeafe 3px, transparent 3px), radial-gradient(#dbeafe 3px, transparent 3px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+        }
+        
+        h1, h2, h3, .font-display {
+            font-family: 'Varela Round', 'Noto Sans TC', sans-serif;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #F0F8FF; }
+        ::-webkit-scrollbar-thumb { background: #FF99C8; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #FF5F5F; }
+        
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            bottom: -10px;
+            left: 24px;
+            width: 4px;
+            background-image: linear-gradient(to bottom, #4FB6FF 50%, transparent 50%);
+            background-size: 10px 20px;
+            background-repeat: repeat-y;
+            z-index: 0;
+            opacity: 0.6;
+        }
+
+        /* 彈跳特效 */
+        .bouncy {
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .bouncy:hover {
+            transform: translateY(-5px) scale(1.02);
+        }
+        .bouncy:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body class="bg-magic-bg text-gray-700 font-sans h-screen flex flex-col overflow-hidden selection:bg-magic-yellow selection:text-magic-black">
+
+    <!-- Header -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm border-b-4 border-magic-yellow z-20 flex-none relative overflow-hidden">
+        <!-- 裝飾背景 -->
+        <div class="absolute -top-10 -right-10 w-40 h-40 bg-magic-blue rounded-full opacity-10 blur-xl"></div>
+        <div class="absolute top-0 left-20 w-20 h-20 bg-magic-pink rounded-full opacity-10 blur-xl"></div>
+
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center relative z-10">
+            <div class="flex items-center space-x-3">
+                <!-- 標題圖標 -->
+                <div class="w-12 h-12 bg-gradient-to-tr from-magic-red to-orange-400 text-white flex items-center justify-center rounded-2xl shadow-pop transform rotate-3">
+                    <i class="fa-solid fa-plane-departure text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-2xl md:text-3xl font-display font-bold text-magic-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-magic-red to-magic-purple">
+                        江南親子遊
+                    </h1>
+                    <p class="text-xs md:text-sm text-gray-500 font-bold bg-yellow-100 inline-block px-2 py-0.5 rounded-full mt-1">
+                        ✨ 2026年4月 · 夢幻冒險 ✨
+                    </p>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-4">
+                 <div class="bg-blue-50 text-magic-blue px-4 py-2 rounded-xl text-sm font-bold border-2 border-blue-100 flex items-center gap-2">
+                    <i class="fa-solid fa-cloud-sun text-yellow-400 text-lg"></i>
+                    <span>15-23°C 舒適</span>
+                 </div>
+                 <div class="bg-green-50 text-green-600 px-4 py-2 rounded-xl text-sm font-bold border-2 border-green-100 flex items-center gap-2">
+                    <i class="fa-solid fa-suitcase"></i>
+                    <span>長榮 BR705</span>
+                 </div>
+            </div>
+        </div>
+        
+        <!-- Tabs Navigation -->
+        <div class="max-w-7xl mx-auto px-2 md:px-4 mt-2 pb-2 overflow-x-auto no-scrollbar">
+            <nav class="flex space-x-3 p-1" id="dayTabs"></nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col md:flex-row overflow-hidden max-w-7xl mx-auto w-full relative">
+        
+        <!-- Left Panel: Itinerary -->
+        <section class="w-full md:w-1/2 lg:w-5/12 h-full overflow-y-auto p-4 md:p-6 bg-white/50 relative" id="itineraryContainer">
+            <!-- Content injected by JS -->
+        </section>
+
+        <!-- Right Panel: Google Map -->
+        <section class="hidden md:block w-full md:w-1/2 lg:w-7/12 h-full bg-blue-100 relative shadow-inner border-l-4 border-white">
+            <!-- Map Frame -->
+            <div class="absolute inset-4 bg-white rounded-3xl shadow-pop overflow-hidden border-4 border-magic-yellow">
+                <div id="mapOverlay" class="absolute inset-0 z-10 pointer-events-none flex items-center justify-center transition-opacity duration-300 opacity-0 bg-magic-blue/20 backdrop-blur-sm">
+                    <div class="bg-white text-magic-blue px-6 py-3 rounded-full font-bold shadow-lg animate-bounce">
+                        <i class="fa-solid fa-wand-magic-sparkles mr-2"></i>地圖載入中...
+                    </div>
+                </div>
+                <iframe id="googleMapFrame" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" src=""></iframe>
+            </div>
+            
+            <!-- Location Info Card -->
+            <div class="absolute bottom-10 left-10 right-10 bg-white/95 backdrop-blur-md rounded-2xl shadow-pop-hover p-5 border-2 border-gray-100 z-20 bouncy">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="bg-magic-red text-white text-xs px-2 py-0.5 rounded-full font-bold">目前位置</span>
+                        </div>
+                        <h3 id="currentLocTitle" class="font-display font-bold text-xl text-gray-800">上海豫園萬麗飯店</h3>
+                        <p id="currentLocAddress" class="text-sm text-gray-500 mt-1"><i class="fa-solid fa-map-pin text-magic-red mr-1"></i>預設起點</p>
+                    </div>
+                    <a id="extMapLink" href="#" target="_blank" class="bg-gradient-to-r from-magic-blue to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white px-5 py-3 rounded-xl text-sm font-bold shadow-lg transition flex items-center gap-2 whitespace-nowrap transform hover:scale-105 active:scale-95">
+                        <i class="fa-solid fa-location-arrow"></i> 導航
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mobile Map Toggle Button -->
+        <div class="md:hidden fixed bottom-6 right-6 z-50">
+            <button onclick="toggleMobileMap()" class="bg-magic-red text-white w-16 h-16 rounded-full shadow-pop-hover hover:bg-red-500 transition transform hover:scale-110 border-4 border-white flex items-center justify-center animate-bounce">
+                <i class="fa-solid fa-map-location-dot text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Map Modal -->
+        <div id="mobileMapModal" class="md:hidden fixed inset-0 z-40 bg-white transform translate-y-full transition-transform duration-300 flex flex-col">
+            <div class="flex justify-between items-center p-4 border-b-2 border-gray-100 shadow-sm bg-white">
+                <h3 class="font-bold text-lg text-gray-800 font-display"><i class="fa-solid fa-map text-magic-yellow mr-2"></i>地圖預覽</h3>
+                <button onclick="toggleMobileMap()" class="w-10 h-10 rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200 flex items-center justify-center"><i class="fa-solid fa-xmark text-xl"></i></button>
+            </div>
+            <div class="flex-1 relative bg-blue-50 p-2">
+                <iframe id="mobileMapFrame" width="100%" height="100%" class="rounded-xl shadow-inner border-2 border-white" style="border:0;" allowfullscreen="" loading="lazy" src=""></iframe>
+            </div>
+            <div class="p-4 bg-white border-t-2 border-gray-100">
+                 <a id="mobileExtMapLink" href="#" target="_blank" class="w-full block text-center bg-magic-blue text-white py-4 rounded-xl font-bold shadow-pop active:shadow-none active:translate-y-1 transition">
+                    <i class="fa-solid fa-rocket mr-2"></i> 開啟 Google Maps
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // 資料結構 (保持不變)
+        const tripData = [
+            {
+                dayId: 1,
+                date: "4/17 週五",
+                title: "抵達上海",
+                hotel: "上海豫園萬麗飯店",
+                hotelAddress: "上海市黄浦区河南南路159号",
+                items: [
+                    {
+                        time: "16:50 - 19:05",
+                        title: "長榮航空 BR706",
+                        location: "上海浦東國際機場 T2",
+                        address: "Shanghai Pudong International Airport T2",
+                        type: "transport",
+                        desc: "高雄國際機場 (KHH) ✈️ 上海浦東 (PVG)",
+                        logistics: "一家四口+行李，建議事先預約包車直達飯店。",
+                        dining: "機上餐點"
+                    },
+                    {
+                        time: "20:30",
+                        title: "飯店 Check-in & 晚餐",
+                        location: "上海豫園萬麗飯店",
+                        address: "上海市黄浦区河南南路159号",
+                        type: "hotel",
+                        desc: "萬麗飯店高樓層看夜景，早點休息。",
+                        dining: "便利商店或外賣(餓了麼)直送飯店大廳",
+                        highlight: "絕美豫園/外灘夜景"
+                    }
+                ]
+            },
+            {
+                dayId: 2,
+                date: "4/18 週六",
+                title: "蘇州園林",
+                hotel: "上海豫園萬麗飯店",
+                hotelAddress: "上海市黄浦区河南南路159号",
+                items: [
+                    {
+                        time: "08:00",
+                        title: "出發：上海 🚄 蘇州",
+                        location: "上海虹橋火車站",
+                        address: "Shanghai Hongqiao Railway Station",
+                        type: "transport",
+                        logistics: "地鐵10號線豫園(1號口進) -> 虹橋火車站(B出口)。週六人多，提前60分安檢。",
+                        desc: "搭乘高鐵前往蘇州站。"
+                    },
+                    {
+                        time: "10:00",
+                        title: "獅子林 & 拙政園",
+                        location: "蘇州獅子林",
+                        address: "江蘇省蘇州市姑蘇區園林路23號",
+                        type: "activity",
+                        highlight: "【弟弟】獅子林鑽假山洞迷宮 🦁",
+                        desc: "體驗蘇州古典園林之美，山石嶙峋。"
+                    },
+                    {
+                        time: "12:00",
+                        title: "午餐：松鶴樓",
+                        location: "蘇州松鶴樓(觀前街店)",
+                        address: "江蘇省蘇州市平江區太監弄72號",
+                        type: "dining",
+                        dining: "松鼠桂魚 🐟 (備案: 裕興記麵館)",
+                        desc: "蘇州必吃老字號。"
+                    },
+                    {
+                        time: "14:00",
+                        title: "寒山寺 & 山塘街",
+                        location: "寒山寺",
+                        address: "江蘇省蘇州市姑蘇區寒山寺弄24號",
+                        type: "activity",
+                        highlight: "【姊姊】對應課本《楓橋夜泊》詩詞 📖",
+                        desc: "參訪古剎後前往山塘街感受水鄉風情。"
+                    },
+                    {
+                        time: "19:00",
+                        title: "回程：蘇州 🚄 上海",
+                        location: "蘇州站",
+                        address: "Suzhou Railway Station",
+                        type: "transport",
+                        logistics: "高鐵至虹橋 -> 地鐵10號線(北2入口進) -> 豫園(1號口出)。",
+                        desc: "返回飯店休息。"
+                    }
+                ]
+            },
+            {
+                dayId: 3,
+                date: "4/19 週日",
+                title: "浦東天際線",
+                hotel: "上海豫園萬麗飯店",
+                hotelAddress: "上海市黄浦区河南南路159号",
+                items: [
+                    {
+                        time: "09:30",
+                        title: "渡輪過江 & 東方明珠",
+                        location: "東方明珠廣播電視塔",
+                        address: "上海市浦東新區世紀大道1號",
+                        type: "activity",
+                        logistics: "從金陵東路渡口搭渡輪，便宜有趣。",
+                        highlight: "【共同】全透明懸空廊道挑戰膽量 😱",
+                        desc: "浦東地標，俯瞰黃浦江兩岸。"
+                    },
+                    {
+                        time: "12:00",
+                        title: "午餐：IFC 國金中心",
+                        location: "上海國金中心商場",
+                        address: "上海市浦東新區世紀大道8號",
+                        type: "dining",
+                        dining: "桂滿隴 (杭幫菜) 或 Shake Shack 🍔",
+                        desc: "舒適的購物中心用餐環境。"
+                    },
+                    {
+                        time: "14:30",
+                        title: "南京東路 & 外灘",
+                        location: "南京東路步行街",
+                        address: "上海市黃浦區南京東路",
+                        type: "activity",
+                        logistics: "搭乘「鐺鐺車」減少步行。",
+                        highlight: "【姊姊】Pop Mart 旗艦店 🎁 【弟弟】Lego 旗艦店 🧱",
+                        desc: "十里洋場風光，外灘萬國建築博覽群。"
+                    },
+                    {
+                        time: "18:00",
+                        title: "豫園夜景 & 晚餐",
+                        location: "豫園老街",
+                        address: "上海市黃浦區豫園老街",
+                        type: "activity",
+                        dining: "上海老飯店 或 蔡瀾港式點心 🥟",
+                        desc: "欣賞古色古香的豫園夜燈。"
+                    }
+                ]
+            },
+            {
+                dayId: 4,
+                date: "4/20 週一",
+                title: "迪士尼樂園",
+                hotel: "上海豫園萬麗飯店",
+                hotelAddress: "上海市黄浦区河南南路159号",
+                items: [
+                    {
+                        time: "07:30",
+                        title: "前往迪士尼 ✨",
+                        location: "上海迪士尼樂園",
+                        address: "上海市浦東新區川沙新鎮",
+                        type: "transport",
+                        logistics: "豫園(10號線) -> 交通大學換乘(11號線) -> 迪士尼(1號口)。建議買尊享卡(DPA)。",
+                        desc: "準備好體力，迎接夢幻的一天！"
+                    },
+                    {
+                        time: "09:00",
+                        title: "瘋狂動物城 Zootopia",
+                        location: "上海迪士尼樂園瘋狂動物城",
+                        address: "上海迪士尼樂園",
+                        type: "activity",
+                        highlight: "【共同】全球唯一 Zootopia園區 (首衝熱力追蹤) 🦊🐰",
+                        desc: "沈浸式體驗動物城場景。"
+                    },
+                    {
+                        time: "11:00",
+                        title: "創極速光輪 & 明日世界",
+                        location: "上海迪士尼樂園明日世界",
+                        address: "上海迪士尼樂園",
+                        type: "activity",
+                        highlight: "【爸/姊】創極速光輪 (刺激重機體驗) 🏍️",
+                        desc: "科技感十足的雲霄飛車。"
+                    },
+                    {
+                        time: "12:30",
+                        title: "午餐：巴波薩燒烤",
+                        location: "上海迪士尼樂園寶藏灣",
+                        address: "上海迪士尼樂園",
+                        type: "dining",
+                        dining: "招牌豬肋排餐 🍖",
+                        desc: "位於寶藏灣區域。"
+                    },
+                    {
+                        time: "20:00",
+                        title: "煙火秀 & 晚餐",
+                        location: "迪士尼小鎮",
+                        address: "上海迪士尼度假區",
+                        type: "activity",
+                        highlight: "奇夢之光幻影秀 🎆",
+                        dining: "晚餐：小鎮藍蛙漢堡",
+                        desc: "看完煙火後，於小鎮用餐避開離園尖峰。"
+                    }
+                ]
+            },
+            {
+                dayId: 5,
+                date: "4/21 週二",
+                title: "博物館 & 賦歸",
+                hotel: "甜蜜的家",
+                hotelAddress: "",
+                items: [
+                    {
+                        time: "09:00",
+                        title: "退房 & 寄放行李",
+                        location: "上海豫園萬麗飯店",
+                        address: "上海市黄浦区河南南路159号",
+                        type: "transport",
+                        logistics: "流程：寄放行李 -> 博物館 -> 回飯店拿行李 -> 機場。",
+                        desc: "把握最後一天上午時光。"
+                    },
+                    {
+                        time: "10:00",
+                        title: "上海自然博物館",
+                        location: "上海自然博物館",
+                        address: "上海市静安区北京西路510号",
+                        type: "activity",
+                        highlight: "【弟弟】恐龍展廳 🦕 【姊姊】生命長河標本牆 🦋",
+                        desc: "建築優美且館藏豐富，知性之旅。",
+                        dining: "午餐：博物館內或周邊商場"
+                    },
+                    {
+                        time: "13:30",
+                        title: "靜安雕塑公園 & 南京東路",
+                        location: "靜安雕塑公園",
+                        address: "上海市静安区石门二路128号",
+                        type: "activity",
+                        desc: "博物館旁的戶外藝術公園，隨後可至南京東路做最後採買。"
+                    },
+                    {
+                        time: "16:30",
+                        title: "取行李 & 前往機場",
+                        location: "上海豫園萬麗飯店",
+                        address: "上海市黄浦区河南南路159号",
+                        type: "transport",
+                        desc: "回到飯店領取行李，搭乘專車或磁浮線前往機場。"
+                    },
+                    {
+                        time: "20:05",
+                        title: "長榮航空 BR705 返台",
+                        location: "上海浦東國際機場 T2",
+                        address: "Shanghai Pudong International Airport T2",
+                        type: "transport",
+                        logistics: "BR705 20:05 起飛 -> 22:20 抵達高雄(KHH)。",
+                        dining: "晚餐：機場或機上",
+                        desc: "帶著滿滿回憶，平安回家 🏠。"
+                    }
+                ]
+            }
+        ];
+
+        let currentDayId = 1;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderTabs();
+            renderTimeline(currentDayId);
+            // 初始地圖位置
+            updateMap(tripData[0].hotel, tripData[0].hotelAddress);
+        });
+
+        function renderTabs() {
+            const container = document.getElementById('dayTabs');
+            container.innerHTML = tripData.map(day => `
+                <button onclick="switchDay(${day.dayId})" 
+                    class="rounded-2xl py-3 px-5 whitespace-nowrap text-sm font-bold transition-all duration-300 border-2 shadow-pop hover:shadow-pop-hover transform hover:-translate-y-1
+                    ${day.dayId === currentDayId 
+                        ? 'bg-magic-red text-white border-magic-red scale-105' 
+                        : 'bg-white text-gray-500 border-white hover:border-blue-200 hover:text-magic-blue'}">
+                    <span class="block text-xs opacity-90 mb-0.5">${day.date}</span>
+                    <span class="text-base font-display">${day.title}</span>
+                </button>
+            `).join('');
+        }
+
+        function switchDay(dayId) {
+            currentDayId = dayId;
+            renderTabs();
+            renderTimeline(dayId);
+            const firstLoc = tripData.find(d => d.dayId === dayId).items[0];
+            updateMap(firstLoc.location, firstLoc.address);
+        }
+
+        function renderTimeline(dayId) {
+            const container = document.getElementById('itineraryContainer');
+            const dayData = tripData.find(d => d.dayId === dayId);
+            
+            let html = '';
+            
+            // Hotel Card (Exclude last day home)
+            if(dayData.hotel && dayData.hotel !== "甜蜜的家") {
+                html += `
+                    <div class="mb-10 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-3xl p-1 flex items-center gap-4 cursor-pointer hover:scale-[1.02] transition shadow-pop-hover relative overflow-hidden group z-10" onclick="updateMap('${dayData.hotel}', '${dayData.hotelAddress}')">
+                         <div class="absolute -right-4 -top-4 w-16 h-16 bg-white/20 rounded-full blur-xl"></div>
+                         
+                         <div class="bg-white p-5 w-full rounded-[20px] flex items-center gap-4">
+                            <div class="bg-purple-100 text-purple-600 w-12 h-12 flex items-center justify-center rounded-full shrink-0 border-2 border-purple-200 shadow-inner group-hover:rotate-12 transition">
+                                <i class="fa-solid fa-bed text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800 text-lg font-display">住宿：${dayData.hotel}</h3>
+                                <p class="text-sm text-gray-500 mt-1"><i class="fa-solid fa-location-dot mr-1 text-purple-400"></i>${dayData.hotelAddress}</p>
+                            </div>
+                         </div>
+                    </div>
+                `;
+            }
+
+            // Timeline Items
+            html += '<div class="pt-2 relative">';
+            html += dayData.items.map((item, index) => {
+                let icon = 'fa-location-dot';
+                let themeColor = 'text-magic-red';
+                let iconBg = 'bg-white border-magic-red text-magic-red';
+                let cardBorder = 'border-l-[6px] border-l-magic-red';
+                let pillColor = 'bg-red-100 text-red-600';
+                
+                if(item.type === 'transport') { 
+                    icon = 'fa-plane-departure';
+                    if(item.title.includes('火車')) icon = 'fa-train-subway'; 
+                    themeColor = 'text-magic-blue';
+                    iconBg = 'bg-white border-magic-blue text-magic-blue';
+                    cardBorder = 'border-l-[6px] border-l-magic-blue';
+                    pillColor = 'bg-blue-100 text-blue-600';
+                }
+                if(item.type === 'dining') { 
+                    icon = 'fa-utensils'; 
+                    themeColor = 'text-orange-500';
+                    iconBg = 'bg-white border-orange-400 text-orange-500';
+                    cardBorder = 'border-l-[6px] border-l-orange-400';
+                    pillColor = 'bg-orange-100 text-orange-600';
+                }
+                if(item.type === 'hotel') { 
+                    icon = 'fa-suitcase'; 
+                    themeColor = 'text-purple-500';
+                    iconBg = 'bg-white border-purple-400 text-purple-500';
+                    cardBorder = 'border-l-[6px] border-l-purple-400';
+                    pillColor = 'bg-purple-100 text-purple-600';
+                }
+                
+                // Special style for Disney items
+                if(item.title.includes('迪士尼') || item.location.includes('迪士尼')) {
+                    icon = 'fa-wand-magic-sparkles';
+                    themeColor = 'text-pink-500';
+                    iconBg = 'bg-gradient-to-br from-pink-400 to-purple-500 text-white border-transparent shadow-lg animate-pulse';
+                    cardBorder = 'border-l-[6px] border-l-pink-400';
+                }
+
+                return `
+                <div class="relative pl-12 pb-10 group timeline-line last:pb-0">
+                    <!-- Icon Node -->
+                    <div class="absolute left-[6px] top-0 w-12 h-12 ${iconBg} rounded-full flex items-center justify-center z-10 border-4 shadow-sm group-hover:scale-110 group-hover:rotate-12 transition duration-300">
+                        <i class="fa-solid ${icon}"></i>
+                    </div>
+                    
+                    <!-- Card -->
+                    <div class="bouncy bg-white rounded-2xl p-5 border-2 border-white shadow-pop hover:shadow-pop-hover cursor-pointer relative overflow-hidden ${cardBorder}"
+                        onclick="updateMap('${item.location}', '${item.address}')">
+                        
+                        <!-- 背景裝飾 -->
+                        <div class="absolute right-0 bottom-0 opacity-5 text-6xl text-gray-300 transform translate-x-4 translate-y-4 rotate-12">
+                             <i class="fa-solid ${icon}"></i>
+                        </div>
+
+                        <div class="relative z-10">
+                            <div class="flex flex-wrap gap-2 items-center mb-2">
+                                <span class="inline-block px-3 py-1 rounded-lg text-xs font-bold ${pillColor}">${item.time}</span>
+                                ${item.type === 'dining' ? '<span class="text-xs bg-yellow-100 text-yellow-600 font-bold px-2 py-1 rounded-lg border border-yellow-200"><i class="fa-solid fa-star mr-1"></i>必吃</span>' : ''}
+                            </div>
+                            
+                            <h3 class="text-xl font-display font-bold text-gray-800 mb-2 group-hover:${themeColor} transition">${item.title}</h3>
+                            <p class="text-sm text-gray-500 mb-4 leading-relaxed">${item.desc}</p>
+                            
+                            <div class="space-y-3">
+                                ${item.highlight ? `
+                                    <div class="bg-yellow-50 rounded-xl p-3 border-2 border-yellow-100 flex gap-3 items-start">
+                                        <div class="bg-yellow-400 text-white rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                                            <i class="fa-solid fa-lightbulb text-xs"></i>
+                                        </div>
+                                        <span class="text-sm text-gray-700 font-medium">${item.highlight}</span>
+                                    </div>
+                                ` : ''}
+                                
+                                ${item.logistics ? `
+                                    <div class="flex items-start gap-2 text-xs text-gray-400">
+                                        <i class="fa-solid fa-circle-info mt-0.5"></i>
+                                        <span>${item.logistics}</span>
+                                    </div>
+                                ` : ''}
+
+                                ${item.dining && item.type !== 'dining' ? `
+                                    <div class="flex items-start gap-2 text-sm bg-orange-50 p-2 rounded-lg text-orange-800 border border-orange-100">
+                                        <i class="fa-solid fa-burger mt-1"></i>
+                                        <span class="font-bold">餐飲推薦：${item.dining}</span>
+                                    </div>
+                                ` : ''}
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+            }).join('');
+            html += '</div>';
+
+            // 加入監製版權宣告 (Added Copyright)
+            html += `
+                <div class="mt-12 mb-6 text-center group cursor-default">
+                    <div class="inline-flex items-center gap-2 px-5 py-2.5 bg-white/60 backdrop-blur-sm rounded-full border border-white shadow-sm group-hover:shadow-pop transition-all duration-300 group-hover:scale-105">
+                        <i class="fa-solid fa-crown text-magic-yellow text-sm animate-[bounce_2s_infinite]"></i>
+                        <span class="text-xs font-bold text-gray-400 tracking-widest group-hover:text-magic-blue transition-colors font-display">
+                            史一良監製，版權所有
+                        </span>
+                        <i class="fa-solid fa-star text-magic-red text-[8px] animate-spin-slow"></i>
+                    </div>
+                </div>
+            `;
+            
+            container.innerHTML = html;
+        }
+
+        function updateMap(loc, addr) {
+            const overlay = document.getElementById('mapOverlay');
+            overlay.classList.remove('opacity-0');
+            
+            const query = encodeURIComponent(loc + (addr ? " " + addr : ""));
+            const mapUrl = `https://maps.google.com/maps?q=${query}&t=&z=14&ie=UTF8&iwloc=&output=embed`;
+            const extLink = `https://www.google.com/maps/search/?api=1&query=${query}`;
+            
+            document.getElementById('googleMapFrame').src = mapUrl;
+            document.getElementById('mobileMapFrame').src = mapUrl;
+            document.getElementById('currentLocTitle').textContent = loc;
+            document.getElementById('currentLocAddress').textContent = addr || loc;
+            document.getElementById('extMapLink').href = extLink;
+            document.getElementById('mobileExtMapLink').href = extLink;
+
+            setTimeout(() => overlay.classList.add('opacity-0'), 1200);
+        }
+
+        function toggleMobileMap() {
+            document.getElementById('mobileMapModal').classList.toggle('translate-y-full');
+        }
+    </script>
+</body>
+</html>
