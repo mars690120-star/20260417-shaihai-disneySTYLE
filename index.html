@@ -156,8 +156,8 @@
                         <div class="flex items-center gap-2 mb-1">
                             <span class="bg-magic-red text-white text-xs px-2 py-0.5 rounded-full font-bold">目前位置</span>
                         </div>
-                        <h3 id="currentLocTitle" class="font-display font-bold text-xl text-gray-800">上海豫園萬麗飯店</h3>
-                        <p id="currentLocAddress" class="text-sm text-gray-500 mt-1"><i class="fa-solid fa-map-pin text-magic-red mr-1"></i>預設起點</p>
+                        <h3 id="currentLocTitle" class="font-display font-bold text-xl text-gray-800">上海人民廣場大世界地鐵站亞朵飯店</h3>
+                        <p id="currentLocAddress" class="text-sm text-gray-500 mt-1"><i class="fa-solid fa-map-pin text-magic-red mr-1"></i>上海市黃浦區金陵東路500號亞龍廣場7F</p>
                     </div>
                     <a id="extMapLink" href="#" target="_blank" class="bg-gradient-to-r from-magic-blue to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white px-5 py-3 rounded-xl text-sm font-bold shadow-lg transition flex items-center gap-2 whitespace-nowrap transform hover:scale-105 active:scale-95">
                         <i class="fa-solid fa-location-arrow"></i> 導航
@@ -191,14 +191,14 @@
     </main>
 
     <script>
-        // 資料結構 (保持不變)
+        // 資料結構
         const tripData = [
             {
                 dayId: 1,
                 date: "4/17 週五",
                 title: "抵達上海",
-                hotel: "上海豫園萬麗飯店",
-                hotelAddress: "上海市黄浦区河南南路159号",
+                hotel: "上海人民廣場大世界地鐵站亞朵飯店",
+                hotelAddress: "上海市黃浦區金陵東路500號亞龍廣場7F",
                 items: [
                     {
                         time: "16:50 - 19:05",
@@ -213,12 +213,12 @@
                     {
                         time: "20:30",
                         title: "飯店 Check-in & 晚餐",
-                        location: "上海豫園萬麗飯店",
-                        address: "上海市黄浦区河南南路159号",
+                        location: "上海人民廣場大世界地鐵站亞朵飯店",
+                        address: "上海市黃浦區金陵東路500號亞龍廣場7F",
                         type: "hotel",
-                        desc: "萬麗飯店高樓層看夜景，早點休息。",
+                        desc: "體驗亞朵人文風格與舒適服務，辦理入住後早點休息。",
                         dining: "便利商店或外賣(餓了麼)直送飯店大廳",
-                        highlight: "絕美豫園/外灘夜景"
+                        highlight: "亞朵人文閱讀空間/鄰近大世界"
                     }
                 ]
             },
@@ -226,8 +226,8 @@
                 dayId: 2,
                 date: "4/18 週六",
                 title: "蘇州園林",
-                hotel: "上海豫園萬麗飯店",
-                hotelAddress: "上海市黄浦区河南南路159号",
+                hotel: "上海人民廣場大世界地鐵站亞朵飯店",
+                hotelAddress: "上海市黃浦區金陵東路500號亞龍廣場7F",
                 items: [
                     {
                         time: "08:00",
@@ -235,7 +235,7 @@
                         location: "上海虹橋火車站",
                         address: "Shanghai Hongqiao Railway Station",
                         type: "transport",
-                        logistics: "地鐵10號線豫園(1號口進) -> 虹橋火車站(B出口)。週六人多，提前60分安檢。",
+                        logistics: "地鐵8號線大世界站 -> 人民廣場轉2號線 -> 虹橋火車站。週六人多，提前60分安檢。",
                         desc: "搭乘高鐵前往蘇州站。"
                     },
                     {
@@ -271,7 +271,7 @@
                         location: "蘇州站",
                         address: "Suzhou Railway Station",
                         type: "transport",
-                        logistics: "高鐵至虹橋 -> 地鐵10號線(北2入口進) -> 豫園(1號口出)。",
+                        logistics: "高鐵至虹橋 -> 地鐵2號線 -> 人民廣場轉8號線 -> 大世界站。",
                         desc: "返回飯店休息。"
                     }
                 ]
@@ -280,8 +280,8 @@
                 dayId: 3,
                 date: "4/19 週日",
                 title: "浦東天際線",
-                hotel: "上海豫園萬麗飯店",
-                hotelAddress: "上海市黄浦区河南南路159号",
+                hotel: "上海人民廣場大世界地鐵站亞朵飯店",
+                hotelAddress: "上海市黃浦區金陵東路500號亞龍廣場7F",
                 items: [
                     {
                         time: "09:30",
@@ -327,8 +327,8 @@
                 dayId: 4,
                 date: "4/20 週一",
                 title: "迪士尼樂園",
-                hotel: "上海豫園萬麗飯店",
-                hotelAddress: "上海市黄浦区河南南路159号",
+                hotel: "上海人民廣場大世界地鐵站亞朵飯店",
+                hotelAddress: "上海市黃浦區金陵東路500號亞龍廣場7F",
                 items: [
                     {
                         time: "07:30",
@@ -336,7 +336,7 @@
                         location: "上海迪士尼樂園",
                         address: "上海市浦東新區川沙新鎮",
                         type: "transport",
-                        logistics: "豫園(10號線) -> 交通大學換乘(11號線) -> 迪士尼(1號口)。建議買尊享卡(DPA)。",
+                        logistics: "大世界站(8號線) -> 東方體育中心換乘(11號線) -> 迪士尼(1號口)。建議買尊享卡(DPA)。",
                         desc: "準備好體力，迎接夢幻的一天！"
                     },
                     {
@@ -388,8 +388,8 @@
                     {
                         time: "09:00",
                         title: "退房 & 寄放行李",
-                        location: "上海豫園萬麗飯店",
-                        address: "上海市黄浦区河南南路159号",
+                        location: "上海人民廣場大世界地鐵站亞朵飯店",
+                        address: "上海市黃浦區金陵東路500號亞龍廣場7F",
                         type: "transport",
                         logistics: "流程：寄放行李 -> 博物館 -> 回飯店拿行李 -> 機場。",
                         desc: "把握最後一天上午時光。"
@@ -415,8 +415,8 @@
                     {
                         time: "16:30",
                         title: "取行李 & 前往機場",
-                        location: "上海豫園萬麗飯店",
-                        address: "上海市黄浦区河南南路159号",
+                        location: "上海人民廣場大世界地鐵站亞朵飯店",
+                        address: "上海市黃浦區金陵東路500號亞龍廣場7F",
                         type: "transport",
                         desc: "回到飯店領取行李，搭乘專車或磁浮線前往機場。"
                     },
